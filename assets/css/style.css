@@ -21,9 +21,10 @@ body {
   font-family: 'Outfit', serif;
   font-size: 16px;
   line-height: 1.5;
+  color: var(--Brown-800);
+  background-color: var(--Stone-100);
 
   height: 100vh;
-  background-color: var(--Stone-100);
 
   display: flex;
   flex-direction: column;
@@ -31,6 +32,8 @@ body {
 }
 
 p {
+  color: var(--Brown-800);
+  margin: 20px 0px;
   font-weight: 400;
 }
 
@@ -52,26 +55,102 @@ img {
   width: 100%;
 }
 
+h2,
+h3 {
+  font-family: "Young Serif", serif;
+  color: var(--Brown-800);
+}
+
 .main {
   margin: 30px;
 }
 
+.sections {
+  color: var(--Brown-800);
+  padding: 20px 0px;
+}
+
 section {
+  color: var(--Rose-800);
   background-color: var(--Rose-50);
   padding: 20px;
   border-radius: 10px;
 }
 
+section h3 {
+  color: var(--Rose-800);
+
+}
+
 ul,
 ol {
+  margin: 10px 0px;
   padding: 0px 20px;
 }
 
 li {
   /* This is the key part to add space between the bullet and the text */
   padding-left: 20px;
+  margin: 8px 0px;
+
 }
 
 .nutrition ul {
   list-style-type: none;
+  margin: 10px 0px;
+  padding: 0px 20px;
+}
+
+.tbody {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  row-gap: 40px;
+}
+
+table.nutrition-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table.nutrition-table td {
+  padding: 12px 0;
+  border-bottom: 1px solid #1F1F1F;
+}
+
+table.nutrition-table tr:last-child td {
+  border-bottom: none;
+}
+
+.label {
+  color: #333;
+  font-weight: normal;
+}
+
+.value {
+  text-align: right;
+  font-weight: bold;
+  color: #5d4037;
+}
+
+.instructions-section {
+  border-bottom: 0.5px solid #1F1F1F;
+  border-top: 0.5px solid #1F1F1F;
+}
+
+
+/* Styles for a small desktop and up */
+@media (min-width: 1024px) {
+  .content {
+    width: 720px;
+    border-radius: 20px;
+  }
+
+  .header {
+    margin: 30px;
+  }
+
+  .header img {
+    border-radius: 20px;
+  }
 }
