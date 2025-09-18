@@ -1,0 +1,77 @@
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+  --Brown-800: hsl(14, 45%, 36%);
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Outfit', serif;
+  font-size: 16px;
+  line-height: 1.5;
+
+  height: 100vh;
+  background-color: var(--Stone-100);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+p {
+  font-weight: 400;
+}
+
+.call-to-action {
+  font-weight: 600;
+}
+
+strong {
+  font-weight: 700;
+}
+
+.content {
+  width: 360px;
+  background-color: var(--White);
+
+}
+
+img {
+  width: 100%;
+}
+
+.main {
+  margin: 30px;
+}
+
+section {
+  background-color: var(--Rose-50);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+ul,
+ol {
+  padding: 0px 20px;
+}
+
+li {
+  /* This is the key part to add space between the bullet and the text */
+  padding-left: 20px;
+}
+
+.sections ul {
+  list-style-type: none;
+}
